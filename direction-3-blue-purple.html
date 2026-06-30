@@ -118,10 +118,10 @@
   .about-header-left h2 em { color: var(--primary); font-style: normal; }
   .about-header-right { display: flex; flex-direction: row; align-items: flex-end; gap: 10px; }
   .pillars-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 48px; }
-  .pillar { padding: 36px 32px; border-radius: 16px; background: #fff; min-height: 300px; border: 1px solid var(--border); display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 20px rgba(91,79,190,.06); transition: transform .25s, box-shadow .25s; }
+  .pillar { padding: 32px; border-radius: 16px; background: #fff; border: 1px solid var(--border); display: flex; flex-direction: column; gap: 0; box-shadow: 0 2px 20px rgba(91,79,190,.06); transition: transform .25s, box-shadow .25s; }
   .pillar:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(91,79,190,.12); }
-  .pillar-icon-wrap { margin-bottom: 18px; color: var(--primary); }
-  .pillar h3 { font-family: 'Bitter', serif; font-size: 20px; font-weight: 700; color: var(--deep); line-height: 1.3; margin-bottom: 10px; }
+  .pillar-icon-wrap { margin-bottom: 20px; color: var(--primary); }
+  .pillar h3 { font-family: 'Bitter', serif; font-size: 18px; font-weight: 700; color: var(--deep); line-height: 1.3; margin-bottom: 14px; }
   .pillar p { font-size: 13px; color: var(--body); line-height: 1.75; }
   .about-actions { display: flex; gap: 12px; justify-content: center; }
   /* shared btn structure */
@@ -139,15 +139,14 @@
 
   /* ── MESSAGE ── */
   .message { background: #fff; }
-  .message-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-  .message-inner .section-h { font-size: 32px; margin-bottom: 28px; }
-  .message-body { font-size: 15px; color: var(--body); line-height: 1.8; text-align: center; margin-bottom: 52px; }
-  .leaders-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; text-align: left; }
+  .message-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .message-inner .section-h { font-size: 36px; margin-bottom: 28px; }
+  .message-body { font-size: 15px; color: var(--body); line-height: 1.8; text-align: left; }
+  .leaders-row { display: flex; flex-direction: column; gap: 20px; }
   .leader-card { background: #fff; border-radius: 20px; padding: 28px; border: 1px solid var(--border); display: flex; flex-direction: column; gap: 0; }
-  .leader-card-top { display: flex; justify-content: space-between; align-items: flex-start; }
-  .leader-avatar { width: 72px; height: 72px; border-radius: 14px; background: linear-gradient(135deg, var(--border), var(--accent)); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 28px; }
-  .leader-quote { font-size: 52px; line-height: 1; color: var(--accent); font-family: Georgia, serif; font-weight: 700; margin-top: -8px; opacity: .5; }
-  .leader-body { font-size: 14px; color: var(--text); line-height: 1.75; font-weight: 500; flex: 1; margin: 20px 0 24px; }
+  .leader-card-top { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; }
+  .leader-avatar { width: 60px; height: 60px; border-radius: 14px; background: var(--surface); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 26px; }
+  .leader-body { font-size: 13px; color: var(--body); line-height: 1.75; font-style: italic; flex: 1; }
   .leader-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; border-top: 1px solid var(--border); }
   .leader-info .name { font-family: 'Bitter', serif; font-size: 14px; font-weight: 700; color: var(--deep); margin-bottom: 3px; }
   .leader-info .role { font-size: 11px; color: var(--muted); line-height: 1.5; }
@@ -196,11 +195,11 @@
   .prestigious-heading { max-width: 52%; margin-bottom: 60px; }
   .prestigious-heading .section-h { font-size: 42px; line-height: 1.15; }
   .prestige-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  .prestige-card { background: #fff; border-radius: 16px; padding: 36px 32px; min-height: 340px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 20px rgba(91,79,190,.06); transition: transform .25s, box-shadow .25s; }
+  .prestige-card { background: #fff; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 0; box-shadow: 0 2px 20px rgba(91,79,190,.06); transition: transform .25s, box-shadow .25s; }
   .prestige-card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(91,79,190,.12); }
-  .prestige-card-icon { margin-bottom: 18px; color: var(--primary); }
+  .prestige-card-icon { margin-bottom: 20px; color: var(--primary); }
   .prestige-card-icon svg { display: block; }
-  .prestige-card h4 { font-family: 'Bitter', serif; font-size: 20px; font-weight: 700; color: var(--deep); line-height: 1.3; }
+  .prestige-card h4 { font-family: 'Bitter', serif; font-size: 17px; font-weight: 700; color: var(--deep); line-height: 1.3; margin-bottom: 14px; }
   .prestige-card p { font-size: 13px; color: var(--body); line-height: 1.75; }
 
   /* ── FAQ ── */
@@ -354,21 +353,23 @@
 <!-- MESSAGE -->
 <section class="message">
   <div class="message-inner reveal">
-    <div class="section-tag">A Message From</div>
-    <h2 class="section-h">Message from Award Program Chair and APSIC President</h2>
-    <div class="message-body">
-      <p>The APSIC Environmental Hygiene Excellence Award has been established to shine a light on the healthcare facilities across Asia Pacific that go above and beyond in maintaining safe, clean, and infection-free environments for their patients and staff.</p>
-      <br>
-      <p>Environmental hygiene is the unsung hero of infection prevention — a meticulous discipline that requires commitment, expertise, and continuous improvement. This Award celebrates the teams and institutions who have made that commitment, and whose work has directly contributed to saving lives.</p>
-      <br>
-      <p>We believe this recognition will inspire others across the region to raise their standards, to innovate, and to champion hygiene excellence as a core value of quality healthcare. We warmly invite eligible institutions to participate in the 2025 Award programme.</p>
+    <div class="message-left">
+      <div class="section-tag">A Message From</div>
+      <h2 class="section-h">Message from Award Program Chair and APSIC President</h2>
+      <div class="message-body">
+        <p>The APSIC Environmental Hygiene Excellence Award has been established to shine a light on the healthcare facilities across Asia Pacific that go above and beyond in maintaining safe, clean, and infection-free environments for their patients and staff.</p>
+        <br>
+        <p>Environmental hygiene is the unsung hero of infection prevention — a meticulous discipline that requires commitment, expertise, and continuous improvement. This Award celebrates the teams and institutions who have made that commitment, and whose work has directly contributed to saving lives.</p>
+        <br>
+        <p>We believe this recognition will inspire others across the region to raise their standards, to innovate, and to champion hygiene excellence as a core value of quality healthcare. We warmly invite eligible institutions to participate in the 2025 Award programme.</p>
+      </div>
     </div>
     <div class="leaders-row">
       <div class="leader-card">
         <div class="leader-card-top">
           <div class="leader-avatar">👩‍⚕️</div>
+          <p class="leader-body">Environmental hygiene is the unsung hero of infection prevention — a discipline that requires unwavering commitment, continuous improvement, and organisation-wide leadership.</p>
         </div>
-        <p class="leader-body">Environmental hygiene is the unsung hero of infection prevention — a discipline that requires unwavering commitment, continuous improvement, and organisation-wide leadership.</p>
         <div class="leader-footer">
           <div class="leader-info">
             <div class="name">A/Prof Moi Lin Ling</div>
@@ -383,8 +384,8 @@
       <div class="leader-card">
         <div class="leader-card-top">
           <div class="leader-avatar">👨‍⚕️</div>
+          <p class="leader-body">This Award celebrates institutions that have made the commitment to hygiene excellence — and whose work has directly contributed to saving lives across Asia Pacific.</p>
         </div>
-        <p class="leader-body">This Award celebrates institutions that have made the commitment to hygiene excellence — and whose work has directly contributed to saving lives across Asia Pacific.</p>
         <div class="leader-footer">
           <div class="leader-info">
             <div class="name">Prof. Anucha Apisarnthanarak</div>

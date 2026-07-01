@@ -1,0 +1,4397 @@
+{
+  "version": "2.14",
+  "children": [
+    {
+      "type": "frame",
+      "id": "ViTvZ",
+      "x": 0,
+      "y": 0,
+      "name": "Direction 1 - Clinical Minimal",
+      "clip": true,
+      "width": 1440,
+      "height": 4300,
+      "fill": "#E5E5E7",
+      "cornerRadius": 24,
+      "layout": "vertical",
+      "padding": [
+        40,
+        120
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "JXm6E",
+          "name": "NAV",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#FFFFFF",
+          "stroke": "#E0E0E0",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "u4tjxb",
+              "name": "AEHEA Logo",
+              "fill": "#111111",
+              "content": "AEHEA",
+              "fontFamily": "Manrope",
+              "fontSize": 22,
+              "fontWeight": "800"
+            },
+            {
+              "type": "frame",
+              "id": "yPmpa",
+              "name": "Nav Center",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "stroke": "#E0E0E0",
+              "strokeWidth": 1,
+              "gap": 8,
+              "padding": [
+                8,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F1I5S",
+                  "name": "Panel & Partner",
+                  "fill": "#4A4A4A",
+                  "content": "Panel & Partner",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Uw66J",
+                  "name": "FAQ",
+                  "fill": "#4A4A4A",
+                  "content": "FAQ",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "YUiH8",
+                  "name": "Contact",
+                  "fill": "#4A4A4A",
+                  "content": "Contact",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Qnw9G",
+              "name": "Register Button",
+              "fill": "#1A1A1A",
+              "cornerRadius": 8,
+              "stroke": "#1A1A1A",
+              "padding": [
+                12,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r7hZk9",
+                  "name": "Register Label",
+                  "fill": "#FFFFFF",
+                  "content": "Register your interest",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QViYJ",
+          "name": "HERO",
+          "width": "fill_container",
+          "height": 620,
+          "fill": "#F5F5F7",
+          "layout": "vertical",
+          "padding": [
+            32,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "a6ihGA",
+              "name": "Hero Banner Container",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000010",
+                "offset": {
+                  "x": 0,
+                  "y": 12
+                },
+                "blur": 40
+              },
+              "layout": "vertical",
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mKDA7",
+                  "name": "Hero Image Banner",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1706806594967-44e2b31f01d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 18,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "r9cnJ",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Hero Overlay",
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 270,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#00000085",
+                            "position": 0
+                          },
+                          {
+                            "color": "#00000060",
+                            "position": 0.45
+                          },
+                          {
+                            "color": "#00000045",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "width": 1080,
+                      "height": 532
+                    },
+                    {
+                      "type": "text",
+                      "id": "wwKVX",
+                      "x": 48,
+                      "y": 48,
+                      "name": "Eyebrow",
+                      "fill": "#FFFFFF",
+                      "content": "APSIC ENVIRONMENTAL HYGIENE EXCELLENCE AWARD",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "yswaq",
+                      "x": 48,
+                      "y": 80,
+                      "name": "Headline",
+                      "fill": "#FFFFFF",
+                      "content": "Be recognised.\nSave lives.",
+                      "fontFamily": "Manrope",
+                      "fontSize": 56,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MVYsl",
+                      "x": 48,
+                      "y": 260,
+                      "name": "Explore Cue",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "D4UFY9",
+                          "name": "Play Button",
+                          "width": 44,
+                          "height": 44,
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 22,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "dRzlA",
+                              "name": "Play Icon",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "play",
+                              "library": "lucide",
+                              "fill": "#1A1A1A"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DUhqo",
+                          "name": "Explore Label",
+                          "fill": "#FFFFFF",
+                          "content": "Explore the award",
+                          "fontFamily": "Open Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "IsMyy",
+                      "x": 720,
+                      "y": 320,
+                      "name": "Subtext",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "The APSIC Environmental Hygiene Excellence Award (AEHEA) recognises hospitals across Asia Pacific that demonstrate outstanding commitment to environmental hygiene and infection prevention.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 15
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "M2xZ2",
+          "name": "ABOUT",
+          "width": "fill_container",
+          "height": 680,
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": "#E0E0E0",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000008",
+            "offset": {
+              "x": 0,
+              "y": 8
+            },
+            "blur": 32
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "WBCr2",
+              "name": "About Heading",
+              "fill": "#111111",
+              "content": "About APSIC Environmental Hygiene\nExcellence Award (AEHEA)",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "x6lf6",
+              "name": "About Sub",
+              "fill": "#4A4A4A",
+              "textGrowth": "fixed-width",
+              "width": 640,
+              "content": "The AEHEA recognises hospitals across the Asia-Pacific region that demonstrate exceptional commitment to environmental hygiene, infection prevention, and patient safety.",
+              "textAlign": "center",
+              "fontFamily": "Open Sans",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "U0HUtF",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "height": 280,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aWZkH",
+                  "name": "Commitment to IPC",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "I2rbm",
+                      "name": "Commitment to IPC Icon",
+                      "width": 32,
+                      "height": 32,
+                      "icon": "shield",
+                      "library": "lucide",
+                      "fill": "#5B7B8A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oJpUA",
+                      "name": "Commitment to IPC Title",
+                      "fill": "#111111",
+                      "content": "Commitment to IPC",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X6pnWt",
+                      "name": "Commitment to IPC Desc",
+                      "fill": "#4A4A4A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Demonstrated dedication to infection prevention and control practices across all hospital departments.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M6mrN",
+                  "name": "Innovative Practices",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "JZTCI",
+                      "name": "Innovative Practices Icon",
+                      "width": 32,
+                      "height": 32,
+                      "icon": "lightbulb",
+                      "library": "lucide",
+                      "fill": "#5B7B8A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GFRCY",
+                      "name": "Innovative Practices Title",
+                      "fill": "#111111",
+                      "content": "Innovative Practices",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J6hrHX",
+                      "name": "Innovative Practices Desc",
+                      "fill": "#4A4A4A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Implementation of creative, evidence-based solutions for environmental hygiene challenges.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I7lyVu",
+                  "name": "Quality of Care",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 12,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "igm0B",
+                      "name": "Quality of Care Icon",
+                      "width": 32,
+                      "height": 32,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#5B7B8A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xk3sy",
+                      "name": "Quality of Care Title",
+                      "fill": "#111111",
+                      "content": "Quality of Care",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g3qwoc",
+                      "name": "Quality of Care Desc",
+                      "fill": "#4A4A4A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tangible improvements in patient outcomes through superior environmental hygiene standards.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YLZLQ",
+          "name": "MESSAGE",
+          "width": "fill_container",
+          "fill": "#F5F5F7",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YecTw",
+              "name": "Message Heading",
+              "fill": "#111111",
+              "content": "Message from Award Program Chair\nand APSIC President",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "e1XIvx",
+              "name": "Message Row",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QUHsE",
+                  "name": "Leader Card — Moi Lin Ling",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "YnkT5",
+                      "name": "A/Prof. Moi Lin Ling Avatar",
+                      "fill": "#EFEFEF",
+                      "width": 72,
+                      "height": 72,
+                      "stroke": "#E0E0E0",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ebyoz",
+                      "name": "A/Prof. Moi Lin Ling Name",
+                      "fill": "#111111",
+                      "content": "A/Prof. Moi Lin Ling",
+                      "textAlign": "center",
+                      "fontFamily": "Manrope",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ysxGo",
+                      "name": "A/Prof. Moi Lin Ling Title",
+                      "fill": "#8A8A8A",
+                      "content": "Program Chair, AEHEA",
+                      "textAlign": "center",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AtTFT",
+                      "name": "A/Prof. Moi Lin Ling Bio",
+                      "fill": "#4A4A4A",
+                      "textGrowth": "fixed-width",
+                      "width": 460,
+                      "content": "A/Prof. Moi Lin Ling is a leading infection prevention specialist and Program Chair of the AEHEA, championing environmental hygiene excellence across the region.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "rwroB",
+                      "name": "A/Prof. Moi Lin Ling Quote",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": 460,
+                      "content": "\"This award recognises the unsung heroes of healthcare — the infection prevention teams working tirelessly to keep patients safe. Environmental hygiene is not just about cleanliness; it is the foundation of patient safety.\"",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Manrope",
+                      "fontSize": 22,
+                      "fontWeight": "700",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yqAGI",
+                  "name": "Leader Card — Prof. Anucha Apisarnthanarak",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "HznSZ",
+                      "name": "Prof. Anucha Apisarnthanarak Avatar",
+                      "fill": "#EFEFEF",
+                      "width": 72,
+                      "height": 72,
+                      "stroke": "#E0E0E0",
+                      "strokeWidth": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "F5I9R0",
+                      "name": "Prof. Anucha Apisarnthanarak Name",
+                      "fill": "#111111",
+                      "content": "Prof. Anucha Apisarnthanarak",
+                      "textAlign": "center",
+                      "fontFamily": "Manrope",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "liSZC",
+                      "name": "Prof. Anucha Apisarnthanarak Title",
+                      "fill": "#8A8A8A",
+                      "content": "President, APSIC",
+                      "textAlign": "center",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OJ1ri",
+                      "name": "Prof. Anucha Apisarnthanarak Bio",
+                      "fill": "#4A4A4A",
+                      "textGrowth": "fixed-width",
+                      "width": 460,
+                      "content": "Prof. Anucha Apisarnthanarak is President of APSIC and a globally recognised expert in healthcare-associated infection prevention and antimicrobial stewardship.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    },
+                    {
+                      "type": "text",
+                      "id": "xbpBa",
+                      "name": "Prof. Anucha Apisarnthanarak Quote",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": 460,
+                      "content": "\"We are proud to launch the AEHEA as a platform to celebrate excellence in environmental hygiene across the Asia-Pacific region. Hospitals that participate demonstrate their commitment to the highest standards of care.\"",
+                      "lineHeight": 1.35,
+                      "fontFamily": "Manrope",
+                      "fontSize": 22,
+                      "fontWeight": "700",
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pIQUk",
+          "name": "WHY JOIN",
+          "width": "fill_container",
+          "fill": "#F5F5F7",
+          "layout": "vertical",
+          "padding": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "s3mcb4",
+              "name": "Why Join Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": "#E0E0E0",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 40,
+              "padding": [
+                48,
+                64
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "e2HqC6",
+                  "name": "Features Row",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ojwxX",
+                      "name": "Be Recognised",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Lz8Ns",
+                          "name": "Be Recognised Num",
+                          "fill": "#E5E5E7",
+                          "content": "01",
+                          "fontFamily": "Manrope",
+                          "fontSize": 72,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vS395",
+                          "name": "Be Recognised Title",
+                          "fill": "#111111",
+                          "content": "Be Recognised",
+                          "fontFamily": "Manrope",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JW35g",
+                          "name": "Be Recognised Desc",
+                          "fill": "#4A4A4A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Stand among the best hospitals in the Asia-Pacific region. The AEHEA provides a platform for your institution's environmental hygiene achievements to be acknowledged at the highest level.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 15
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dV7v9",
+                      "name": "Save Lives",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sUd3G",
+                          "name": "Save Lives Num",
+                          "fill": "#E5E5E7",
+                          "content": "02",
+                          "fontFamily": "Manrope",
+                          "fontSize": 72,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f8Ysgx",
+                          "name": "Save Lives Title",
+                          "fill": "#111111",
+                          "content": "Save Lives",
+                          "fontFamily": "Manrope",
+                          "fontSize": 20,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QTpG3",
+                          "name": "Save Lives Desc",
+                          "fill": "#4A4A4A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Show your dedication to reducing healthcare-associated infections. Your commitment to environmental hygiene directly impacts patient outcomes and community health.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vjUAo",
+                  "name": "Sub Points Row",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "F4shB",
+                      "name": "Celebrated on the regional stage",
+                      "width": "fill_container",
+                      "fill": "#F5F5F7",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zw4DX",
+                          "name": "Celebrated on the regional stage Title",
+                          "fill": "#111111",
+                          "content": "Celebrated on the regional stage",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GPT2b",
+                          "name": "Celebrated on the regional stage Desc",
+                          "fill": "#4A4A4A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Winners are announced at the APSIC Congress, gaining recognition across the Asia-Pacific medical community.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t2dv4",
+                      "name": "Prestigious recognition, not a monetary prize",
+                      "width": "fill_container",
+                      "fill": "#F5F5F7",
+                      "cornerRadius": 12,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Awroe",
+                          "name": "Prestigious recognition, not a monetary prize Title",
+                          "fill": "#111111",
+                          "content": "Prestigious recognition, not a monetary prize",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KqwSC",
+                          "name": "Prestigious recognition, not a monetary prize Desc",
+                          "fill": "#4A4A4A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The AEHEA offers non-monetary recognition — a symbol of excellence that enhances institutional reputation.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iS16h",
+          "name": "FAQ",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BHV16",
+              "name": "FAQ Label",
+              "fill": "#8A8A8A",
+              "content": "QUESTIONS",
+              "fontFamily": "Open Sans",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "Zs5WS",
+              "name": "FAQ Heading",
+              "fill": "#111111",
+              "content": "Frequently Asked Questions",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "QAgJO",
+              "name": "FAQ List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zwqiX",
+                  "name": "FAQ Item: Who can apply for the AEHEA?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wsRzQ",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Who can apply for the AEHEA?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PGnXc",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DcF7t",
+                  "name": "FAQ Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E0E0E0"
+                },
+                {
+                  "type": "frame",
+                  "id": "fiIro",
+                  "name": "FAQ Item: Is there a fee to enter?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pN1Kv",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Is there a fee to enter?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RFTVx",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n74h1C",
+                  "name": "FAQ Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E0E0E0"
+                },
+                {
+                  "type": "frame",
+                  "id": "SDgcY",
+                  "name": "FAQ Item: How are hospitals evaluated?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gLKA6",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "How are hospitals evaluated?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sRlhn",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H6AyQg",
+                  "name": "FAQ Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E0E0E0"
+                },
+                {
+                  "type": "frame",
+                  "id": "zyRhU",
+                  "name": "FAQ Item: What does the winner receive?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XKZu8",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What does the winner receive?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IzZpG",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wxa6c",
+                  "name": "FAQ Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E0E0E0"
+                },
+                {
+                  "type": "frame",
+                  "id": "r5sdb",
+                  "name": "FAQ Item: When is the next award cycle?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EBpLy",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "When is the next award cycle?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RT1uR",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SkaHc",
+                  "name": "FAQ Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E0E0E0"
+                },
+                {
+                  "type": "frame",
+                  "id": "sgPAL",
+                  "name": "FAQ Item: Is the process confidential?",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OcRKB",
+                      "name": "FAQ Question",
+                      "fill": "#111111",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Is the process confidential?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wCwWU",
+                      "name": "FAQ Toggle",
+                      "fill": "#8A8A8A",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 22,
+                      "fontWeight": "300"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cdUOJ",
+          "name": "CTA",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "cornerRadius": 16,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "B3iMsH",
+              "name": "CTA Heading",
+              "fill": "#FFFFFF",
+              "content": "Want to stay informed?",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "a4uxuV",
+              "name": "CTA Sub",
+              "fill": "#AAAAAA",
+              "content": "Get updates on the AEHEA award programme.",
+              "textAlign": "center",
+              "fontFamily": "Open Sans",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "IL2JU",
+              "name": "CTA Form",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "n15zkA",
+                  "name": "Email Field",
+                  "width": 320,
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k5B7Ha",
+                      "name": "Email Placeholder",
+                      "fill": "#888888",
+                      "content": "Your email address",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t3kOU",
+                  "name": "Subscribe Button",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 8,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KdP5h",
+                      "name": "Subscribe Label",
+                      "fill": "#1A1A1A",
+                      "content": "Subscribe",
+                      "fontFamily": "Manrope",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r66yC",
+          "name": "FOOTER",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            80,
+            32,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "JlDkp",
+              "name": "Footer Top",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "h3UIBO",
+                  "name": "Footer Col 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Qrfkp",
+                      "name": "Footer Logo",
+                      "fill": "#111111",
+                      "content": "AEHEA",
+                      "fontFamily": "Manrope",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w8d9DT",
+                      "name": "Footer Tagline",
+                      "fill": "#8A8A8A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "APSIC Environmental Hygiene Excellence Award — identifying, recognising and celebrating excellence in environmental hygiene and patient safety.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H3QPc",
+                  "name": "Footer Col 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xt31J",
+                      "name": "Footer Col 2 Label",
+                      "fill": "#8A8A8A",
+                      "content": "NAVIGATION",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cJkZE",
+                      "name": "Footer Link Panel & Partner",
+                      "fill": "#4A4A4A",
+                      "content": "Panel & Partner",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UmbTY",
+                      "name": "Footer Link How to Participate",
+                      "fill": "#4A4A4A",
+                      "content": "How to Participate",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "n3jXJr",
+                      "name": "Footer Link Register your Interest",
+                      "fill": "#4A4A4A",
+                      "content": "Register your Interest",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oZPf2",
+                  "name": "Footer Col 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M8elq",
+                      "name": "Footer Col 3 Label",
+                      "fill": "#8A8A8A",
+                      "content": "SUPPORT",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 10,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cbgVu",
+                      "name": "Footer Link FAQ",
+                      "fill": "#4A4A4A",
+                      "content": "FAQ",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KE0wm",
+                      "name": "Footer Link Contact",
+                      "fill": "#4A4A4A",
+                      "content": "Contact",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SvOdG",
+                      "name": "Footer Link Privacy Policy",
+                      "fill": "#4A4A4A",
+                      "content": "Privacy Policy",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "i0H8cy",
+              "name": "Footer Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E0E0E0"
+            },
+            {
+              "type": "text",
+              "id": "Z6nP4",
+              "name": "Footer Copyright",
+              "fill": "#8A8A8A",
+              "content": "© 2026 APSIC Environmental Hygiene Excellence Award. All rights reserved.",
+              "fontFamily": "Open Sans",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "p4ZZeo",
+      "x": 1500,
+      "y": 0,
+      "name": "Direction 2 - Schülke Blue",
+      "clip": true,
+      "width": 1440,
+      "height": 4400,
+      "fill": "#0A1E36",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "e08Nz4",
+          "name": "HERO",
+          "width": 1440,
+          "height": 700,
+          "fill": "#F7F7F7",
+          "gap": 60,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NusO6",
+              "name": "Hero Left",
+              "width": 660,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z8Yzlr",
+                  "name": "Plus Decor",
+                  "fill": "#007CC2",
+                  "content": "AEHEA AWARD 2026",
+                  "fontFamily": "Manrope",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "hs2ZZ",
+                  "name": "H1",
+                  "fill": "#1A1A1A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Be recognised.\nSave lives.",
+                  "fontFamily": "Manrope",
+                  "fontSize": 72,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "tfXM0",
+                  "name": "Hero Sub",
+                  "fill": "#636362",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The APSIC Environmental Hygiene Excellence Award (AEHEA) recognises outstanding contributions to infection prevention and control across Asia Pacific.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Open Sans",
+                  "fontSize": 18
+                },
+                {
+                  "type": "frame",
+                  "id": "ZAZIn",
+                  "name": "CTA Row",
+                  "gap": 16,
+                  "padding": [
+                    8,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JQKkH",
+                      "name": "Apply Now",
+                      "fill": "#007CC2",
+                      "cornerRadius": 4,
+                      "padding": [
+                        24,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XMunD",
+                          "name": "Apply Label",
+                          "fill": "#FFFFFF",
+                          "content": "Apply Now",
+                          "fontFamily": "$font-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "B6yan",
+                      "name": "Learn More",
+                      "cornerRadius": 6,
+                      "stroke": "#007CC2",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        24,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g612Lj",
+                          "name": "Learn Label",
+                          "fill": "#007CC2",
+                          "content": "Learn more",
+                          "fontFamily": "Open Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HT5cs",
+              "name": "Hero Image Wrapper",
+              "clip": true,
+              "width": "fill_container",
+              "height": 520,
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "i3Kk4j",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Hero Image",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1576842267406-d423b1df4aa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ0MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "width": 560,
+                  "height": 520
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bLdrV",
+          "layoutPosition": "absolute",
+          "x": 0,
+          "y": 0,
+          "name": "NAV",
+          "width": 1440,
+          "height": 72,
+          "fill": "#FFFFFF",
+          "stroke": "#E0E0E0",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 40,
+          "padding": [
+            0,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "bdjpI",
+              "name": "AEHEA Logo",
+              "fill": "#1A1A1A",
+              "content": "AEHEA",
+              "fontFamily": "Manrope",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "VWBhF",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": 1,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "I2KU7",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fRdn2",
+                  "name": "Nav Panel & Partner",
+                  "fill": "#636362",
+                  "content": "Panel & Partner",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "ZxaWm",
+                  "name": "Nav FAQ",
+                  "fill": "#636362",
+                  "content": "FAQ",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "uVN0f",
+                  "name": "Nav Contact",
+                  "fill": "#636362",
+                  "content": "Contact",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Pmzfv",
+              "name": "Register Btn",
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "stroke": "#007CC2",
+              "strokeWidth": 1.5,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ka2q4",
+                  "name": "Btn Label",
+                  "fill": "#007CC2",
+                  "content": "Register your interest",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W1Q62Q",
+          "name": "ABOUT",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "QNswt",
+              "name": "About H2",
+              "fill": "#1A1A1A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "About APSIC Environmental Hygiene Excellence Award (AEHEA)",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "p56j3",
+              "name": "About Desc",
+              "fill": "#636362",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "The AEHEA award celebrates healthcare institutions that demonstrate exceptional commitment to environmental hygiene and infection prevention. Awarded biennially, it showcases best practices that save lives across Asia Pacific.",
+              "lineHeight": 1.7,
+              "fontFamily": "Open Sans",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "i3hFWO",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MF2zL",
+                  "name": "Card Commitment to IPC",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hFgy3",
+                      "name": "Card Title",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Commitment to IPC",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X9lrW",
+                      "name": "Card Desc",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Demonstrating sustained dedication to infection prevention and control programmes with measurable outcomes and continuous improvement initiatives.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Afqvj",
+                  "name": "Card Innovative practices",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I1PmKz",
+                      "name": "Card Title",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Innovative practices",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k3qpM4",
+                      "name": "Card Desc",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Implementing novel approaches to environmental hygiene that advance the standard of care and inspire peers across the region.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QeXBS",
+                  "name": "Card Quality of care",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "OgqbT",
+                      "name": "Card Title",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quality of care",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y9SAuX",
+                      "name": "Card Desc",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Excellence in patient safety through rigorous environmental cleaning protocols and comprehensive quality assurance systems.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tYeBj",
+          "name": "MESSAGE",
+          "width": "fill_container",
+          "fill": "#F7F7F7",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "d3Ixs",
+              "name": "Message H2",
+              "fill": "#1A1A1A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Message from Award Program Chair and APSIC President",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "RpCnp",
+              "name": "Message Row",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PSmVj",
+                  "name": "Col 1 - Moi Lin",
+                  "width": "fill_container",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "AK5YP",
+                      "name": "Col 1 Border",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "VqAyr",
+                      "name": "Col1 Name",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A/Prof. Moi Lin Ling",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "D8Bgi",
+                      "name": "Col1 Role",
+                      "fill": "#007CC2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Award Program Chair",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AutPB",
+                      "name": "Col1 Bio",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"The AEHEA represents our commitment to elevating environmental hygiene standards across healthcare institutions. This award is not just about recognition—it is about creating a culture of excellence that directly impacts patient safety and outcomes.\"",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JlXFg",
+                  "name": "Col 2 - Anucha",
+                  "width": "fill_container",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "vOT6W",
+                      "name": "Col 2 Border",
+                      "fill": "#E0E0E0",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "bhCO6",
+                      "name": "Col2 Name",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Prof. Anucha Apisarnthanarak",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "u5ie0s",
+                      "name": "Col2 Role",
+                      "fill": "#007CC2",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "APSIC President",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ib3Cf",
+                      "name": "Col2 Bio",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"Environmental hygiene is the foundation of infection prevention. Through the AEHEA, we shine a light on institutions that go beyond compliance to truly champion the highest standards of care and safety.\"",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CmHbZ",
+          "name": "WHY JOIN",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "children": [
+            {
+              "type": "text",
+              "id": "Urozd",
+              "name": "Why H2",
+              "fill": "#1A1A1A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Why Join?",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ZNGD6",
+              "name": "Why Row",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j34C1H",
+                  "name": "Block 01",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "su2bb",
+                      "name": "Num 01",
+                      "fill": "#EFEFEF",
+                      "content": "01",
+                      "fontFamily": "Manrope",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u5E5D",
+                      "name": "B1 Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pNLNc",
+                          "name": "B1 Title",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Be Recognised",
+                          "fontFamily": "Manrope",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L8a38",
+                          "name": "B1 Desc",
+                          "fill": "#636362",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Gain international recognition for your institution's commitment to environmental hygiene excellence across Asia Pacific.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "k88Tb",
+                  "name": "Block 02",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ih6LY",
+                      "name": "Num 02",
+                      "fill": "#EFEFEF",
+                      "content": "02",
+                      "fontFamily": "Manrope",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bcol4",
+                      "name": "B2 Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "B3k4Qb",
+                          "name": "B2 Title",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Save Lives",
+                          "fontFamily": "Manrope",
+                          "fontSize": 22,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wurst",
+                          "name": "B2 Desc",
+                          "fill": "#636362",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Showcase the infection prevention practices that directly reduce healthcare-associated infections and improve patient outcomes.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Open Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "C5WEo",
+              "name": "Tiles Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JTPpr",
+                  "name": "Tile Who Can Apply?",
+                  "width": "fill_container",
+                  "fill": "#F7F7F7",
+                  "cornerRadius": 10,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nrgZU",
+                      "name": "Tile Title",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Who Can Apply?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "D6q9dx",
+                      "name": "Tile Desc",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Healthcare institutions across Asia Pacific with demonstrated commitment to environmental hygiene and infection prevention programmes.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "R0zst",
+                  "name": "Tile Evaluation Criteria",
+                  "width": "fill_container",
+                  "fill": "#F7F7F7",
+                  "cornerRadius": 10,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "auSEL",
+                      "name": "Tile Title",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Evaluation Criteria",
+                      "fontFamily": "Manrope",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KNbmt",
+                      "name": "Tile Desc",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Rigorous assessment based on environmental cleaning protocols, infection rates, staff training, and quality improvement initiatives.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iQqqL",
+          "name": "FAQ",
+          "width": "fill_container",
+          "fill": "#F7F7F7",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "t11IM",
+              "name": "FAQ H2",
+              "fill": "#1A1A1A",
+              "textGrowth": "fixed-width",
+              "width": 760,
+              "content": "Frequently Asked Questions",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "VD6so",
+              "name": "FAQ Container",
+              "width": 760,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZHDRC",
+                  "name": "FAQ What is the AEHEA aw",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "t2vRFx",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QqdFQ",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "What is the AEHEA award?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RWFSA",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BJtXC",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "The APSIC Environmental Hygiene Excellence Award (AEHEA) recognises healthcare institutions that demonstrate outstanding commitment to environmental hygiene and infection prevention and control across Asia Pacific.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IUcbu",
+                  "name": "FAQ Who can apply?",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sxUwO",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SX6DP",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Who can apply?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CGtDb",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "kszMj",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Any healthcare institution in the Asia Pacific region with a demonstrated commitment to environmental hygiene and infection prevention programmes is eligible to apply.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bGB0e",
+                  "name": "FAQ How are winners eval",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wai3A",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nh1aM",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "How are winners evaluated?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "tz9U3",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "t4OgL4",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Institutions are evaluated based on environmental cleaning protocols, infection rates, staff training programmes, quality improvement initiatives, and overall commitment to patient safety.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "X4092b",
+                  "name": "FAQ When is the applicat",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YzXac",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QGmLn",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "When is the application deadline?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YCAoo",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gaDaN",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Application deadlines are announced biennially. Please contact the APSIC secretariat or check the official APSIC website for current submission dates.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gm4uL",
+                  "name": "FAQ What do winners rece",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Eb2PR",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wAFWV",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "What do winners receive?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MuWSR",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BT1cw",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Winners receive international recognition, a commemorative award, and the opportunity to present their practices at APSIC conferences and publications.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IaNiV",
+                  "name": "FAQ Is there a fee to ap",
+                  "width": "fill_container",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": [
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cJ4wS",
+                      "name": "Question Row",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f38nM",
+                          "name": "Question",
+                          "fill": "#1A1A1A",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Is there a fee to apply?",
+                          "fontFamily": "Manrope",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iGuNr",
+                          "name": "Toggle",
+                          "fill": "#007CC2",
+                          "content": "+",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 20
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "H50YjC",
+                      "name": "Answer",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Please refer to the official APSIC website or contact the secretariat for information regarding application fees and submission requirements.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "H8RzNU",
+          "name": "CTA",
+          "width": "fill_container",
+          "fill": "#007CC2",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JuzkD",
+              "name": "CTA H2",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Want to stay informed?",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "A3DJ9n",
+              "name": "CTA Sub",
+              "fill": "#ffffffb3",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Subscribe to receive updates about AEHEA announcements, deadlines, and resources.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Open Sans",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "xEIiS",
+              "name": "Form Row",
+              "width": 480,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bP2Gd",
+                  "name": "Email Input",
+                  "width": "fill_container",
+                  "fill": "#ffffff1a",
+                  "cornerRadius": 4,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yD2jv",
+                      "name": "Email Placeholder",
+                      "fill": "#ffffff66",
+                      "content": "Enter your email address",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ETOZg",
+                  "name": "Subscribe Btn",
+                  "fill": "#007CC2",
+                  "cornerRadius": 4,
+                  "padding": [
+                    24,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Kivjs",
+                      "name": "Subscribe Label",
+                      "fill": "#FFFFFF",
+                      "content": "Subscribe",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zPDus",
+          "name": "FOOTER",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            80,
+            80,
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ioc4i",
+              "name": "Footer Row",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "i9PoSN",
+                  "name": "Footer Col 1",
+                  "width": 320,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "s9Pbc",
+                      "name": "Footer Logo",
+                      "fill": "#FFFFFF",
+                      "content": "AEHEA",
+                      "fontFamily": "Manrope",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MKb4X",
+                      "name": "Footer Tagline",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "APSIC Environmental Hygiene Excellence Award. Recognising excellence in infection prevention across Asia Pacific.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RqMxR",
+                  "name": "Footer Col 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "at97O",
+                      "name": "FNav Title",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quick Links",
+                      "fontFamily": "Manrope",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QQxSQ",
+                      "name": "FNav Panel & Partner",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Panel & Partner",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "o2zL7",
+                      "name": "FNav FAQ",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "FAQ",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "h51Ph",
+                      "name": "FNav Contact",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Contact",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "IAfW6",
+                      "name": "FNav Apply Now",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Apply Now",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sOMVP",
+                  "name": "Footer Col 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RNEAq",
+                      "name": "FSec Title",
+                      "fill": "#FFFFFF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Resources",
+                      "fontFamily": "Manrope",
+                      "fontSize": 14,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DGzxL",
+                      "name": "FSec About APSIC",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "About APSIC",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "G2zVc",
+                      "name": "FSec Privacy Policy",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Privacy Policy",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "Y7q1Z",
+                      "name": "FSec Terms of Use",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Terms of Use",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "text",
+                      "id": "DvNsR",
+                      "name": "FSec Sitemap",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sitemap",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "jWYZQ",
+              "name": "Footer Divider",
+              "fill": "#333333",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "ytw6b",
+              "name": "Bottom Bar",
+              "width": "fill_container",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dVaSC",
+                  "name": "Copyright",
+                  "fill": "#AFAFAF",
+                  "content": "© 2026 APSIC. All rights reserved.",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "RsFuK",
+                  "name": "Copyright Spacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "layout": "none"
+                },
+                {
+                  "type": "text",
+                  "id": "rUvLL",
+                  "name": "Footer Tag",
+                  "fill": "#AFAFAF",
+                  "content": "Designed with pride for APSIC",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SZF00",
+      "x": 3000,
+      "y": 0,
+      "name": "Direction 3 - Blue Purple",
+      "clip": true,
+      "width": 1440,
+      "height": 3800,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IjKV5",
+          "name": "Nav",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "#FFFFFF",
+          "padding": [
+            0,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GZogA",
+              "name": "Logo Area",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iCWiS",
+                  "name": "AEHEA Logo",
+                  "fill": "#1A1A1A",
+                  "content": "AEHEA",
+                  "fontFamily": "Manrope",
+                  "fontSize": 22,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "Q5yod",
+                  "x": 86,
+                  "y": 5.5,
+                  "name": "Badge",
+                  "enabled": false,
+                  "fill": "#5B4FBE",
+                  "content": "AWARDS 2026",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 10,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hA2ND",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "gGrI9",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rskuD",
+                  "name": "Link Panel & Partner",
+                  "fill": "#636362",
+                  "content": "Panel & Partner",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "YUEl4",
+                  "name": "Link FAQ",
+                  "fill": "#636362",
+                  "content": "FAQ",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "NqDKW",
+                  "name": "Link Contact",
+                  "fill": "#636362",
+                  "content": "Contact",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NyAD5",
+              "name": "Nav CTA",
+              "fill": "#00000000",
+              "cornerRadius": 6,
+              "stroke": "#007CC2",
+              "strokeWidth": 1,
+              "padding": [
+                10,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rMAoB",
+                  "name": "CTA Label",
+                  "fill": "#007CC2",
+                  "content": "Register your interest",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kg2sd",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": "#F7F7F7",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "iT5e1",
+              "name": "Eyebrow Badge",
+              "fill": "#007CC2",
+              "content": "APSIC ENVIRONMENTAL HYGIENE EXCELLENCE AWARD",
+              "fontFamily": "Open Sans",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "text",
+              "id": "YMrpP",
+              "name": "H1 Line 1",
+              "fill": "#1A1A1A",
+              "content": "Be recognised.\nSave lives.",
+              "fontFamily": "Manrope",
+              "fontSize": 68,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "s8l1DN",
+              "x": 599,
+              "y": 196,
+              "name": "H1 Line 2",
+              "enabled": false,
+              "fill": "#2D1B69",
+              "content": "Save lives.",
+              "fontFamily": "Fraunces",
+              "fontSize": 56,
+              "fontWeight": "300",
+              "fontStyle": "italic"
+            },
+            {
+              "type": "text",
+              "id": "DecaE",
+              "name": "Hero Sub",
+              "fill": "#636362",
+              "textGrowth": "fixed-width",
+              "width": 480,
+              "content": "Identifying, recognising and celebrating hospitals across Asia Pacific that demonstrate excellence in environmental hygiene and patient safety.",
+              "fontFamily": "Open Sans",
+              "fontSize": 17
+            },
+            {
+              "type": "frame",
+              "id": "tpYZJ",
+              "name": "CTA Row",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WIaCo",
+                  "name": "Primary CTA",
+                  "fill": "#007CC2",
+                  "cornerRadius": 6,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WS4UT",
+                      "name": "Apply Now",
+                      "fill": "#FFFFFF",
+                      "content": "Apply Now",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MxoEX",
+                  "name": "Learn More",
+                  "fill": "#636362",
+                  "content": "Learn more →",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nYwz7",
+              "name": "Hero Image Card",
+              "metadata": {
+                "type": "unsplash",
+                "username": "shiienurm",
+                "link": "https://unsplash.com/@shiienurm",
+                "author": "Stefan Hiienurm"
+              },
+              "width": 640,
+              "height": 360,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1658692190890-04bffc3bc4a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ0MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 10
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XPVya",
+          "name": "About AEHEA",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DbQJ2",
+              "name": "About Heading",
+              "fill": "#1A1A1A",
+              "content": "About APSIC Environmental Hygiene Excellence Award (AEHEA)",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 36,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "saVjU",
+              "name": "About Intro",
+              "fill": "#636362",
+              "textGrowth": "fixed-width",
+              "width": 680,
+              "content": "The AEHEA is scientifically led and independently governed by APSIC, delivered in cooperation with Schülke. It identifies, recognises and celebrates hospitals across Asia Pacific demonstrating excellence in environmental hygiene and patient safety.",
+              "textAlign": "center",
+              "fontFamily": "Open Sans",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "hgJyK",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "height": 260,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kr7i7",
+                  "name": "Card Commitment to IPC",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "f6fxW",
+                      "name": "Commitment to IPC Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#E8F4FB",
+                      "cornerRadius": 22,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HRc2n",
+                          "name": "Commitment to IPC Icon Char",
+                          "fill": "#007CC2",
+                          "content": "🛡️",
+                          "fontFamily": "Open Sans",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CQ06r",
+                      "name": "Commitment to IPC Title",
+                      "fill": "#1A1A1A",
+                      "content": "Commitment to IPC",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DgX3a",
+                      "name": "Commitment to IPC Body",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "The award recognises hospitals that demonstrate unwavering dedication to infection prevention and control practices, setting benchmarks for healthcare excellence across the region.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "amgzE",
+                  "name": "Card Innovative practices",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "o0ORn",
+                      "name": "Innovative practices Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#E8F4FB",
+                      "cornerRadius": 22,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M5Rmd",
+                          "name": "Innovative practices Icon Char",
+                          "fill": "#007CC2",
+                          "content": "⚡",
+                          "fontFamily": "Open Sans",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "fYIAi",
+                      "name": "Innovative practices Title",
+                      "fill": "#1A1A1A",
+                      "content": "Innovative practices",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z9aaM",
+                      "name": "Innovative practices Body",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Celebrating pioneering approaches and creative solutions in environmental hygiene that push the boundaries of patient safety and healthcare quality.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HcEJm",
+                  "name": "Card Quality of care",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ExsNu",
+                      "name": "Quality of care Icon",
+                      "width": 44,
+                      "height": 44,
+                      "fill": "#E8F4FB",
+                      "cornerRadius": 22,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oQUcL",
+                          "name": "Quality of care Icon Char",
+                          "fill": "#007CC2",
+                          "content": "★",
+                          "fontFamily": "Open Sans",
+                          "fontSize": 18,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "wLeZE",
+                      "name": "Quality of care Title",
+                      "fill": "#1A1A1A",
+                      "content": "Quality of care",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "D7rX6j",
+                      "name": "Quality of care Body",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Honouring institutions that maintain the highest standards of care through rigorous environmental hygiene protocols and continuous quality improvement.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y7Vpc",
+          "name": "Leadership Message",
+          "width": "fill_container",
+          "fill": "#F7F7F7",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "f1hNB",
+              "name": "Message Heading",
+              "fill": "#1A1A1A",
+              "content": "Message from Award Program Chair and APSIC President",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "HIZL4",
+              "name": "Leaders Row",
+              "width": "fill_container",
+              "height": 260,
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fEHdE",
+                  "name": "Leader Moi Lin",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O48gb",
+                      "name": "Avatar 1",
+                      "fill": "#007CC2",
+                      "content": "👤",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g4l06",
+                      "name": "Name 1",
+                      "fill": "#1A1A1A",
+                      "content": "A/Prof. Moi Lin Ling",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mNVfs",
+                      "name": "Title 1",
+                      "fill": "#AFAFAF",
+                      "content": "PROGRAM CHAIR, AEHEA",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "b4dH7",
+                      "name": "Quote 1",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "This award represents a significant step forward in recognising excellence in environmental hygiene across Asia Pacific. I am proud to lead this initiative.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "p1l7pl",
+                  "name": "Leader Anucha",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "A2vIIM",
+                      "name": "Avatar 2",
+                      "fill": "#007CC2",
+                      "content": "👤",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C3Dvo",
+                      "name": "Name 2",
+                      "fill": "#1A1A1A",
+                      "content": "Prof. Anucha Apisarnthanarak",
+                      "fontFamily": "Manrope",
+                      "fontSize": 17,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OLtMW",
+                      "name": "Title 2",
+                      "fill": "#AFAFAF",
+                      "content": "PRESIDENT, APSIC",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "xbUSV",
+                      "name": "Quote 2",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Environmental hygiene is the foundation of patient safety. Through this award, we celebrate and encourage hospitals to raise the bar.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f9ZO58",
+          "name": "Why Join",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SnArT",
+              "name": "Why Join Heading",
+              "fill": "#1A1A1A",
+              "content": "Why join the APSIC Environmental Hygiene Excellence Award?",
+              "textAlign": "center",
+              "fontFamily": "Manrope",
+              "fontSize": 34,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "OGgf5",
+              "name": "Features Row",
+              "width": "fill_container",
+              "height": 200,
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "epL6A",
+                  "name": "Feature 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qYj55",
+                      "name": "F1 Number",
+                      "fill": "#EFEFEF",
+                      "content": "01",
+                      "fontFamily": "Manrope",
+                      "fontSize": 48,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "swnMq",
+                      "name": "F1 Title",
+                      "fill": "#1A1A1A",
+                      "content": "Be Recognised",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gnUDP",
+                      "name": "F1 Body",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Gain regional recognition and peer credibility. Showcase your hospital's commitment to the highest standards of environmental hygiene across Asia Pacific.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JkrO8",
+                  "name": "Feature 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PiMeh",
+                      "name": "F2 Number",
+                      "fill": "#EFEFEF",
+                      "content": "02",
+                      "fontFamily": "Manrope",
+                      "fontSize": 48,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HNyND",
+                      "name": "F2 Title",
+                      "fill": "#1A1A1A",
+                      "content": "Save Lives",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NT6Dh",
+                      "name": "F2 Body",
+                      "fill": "#636362",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Drive higher standards of environmental hygiene in your institution. Improve patient safety outcomes and contribute to raising the bar for healthcare quality.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BMh7o",
+              "name": "Info Tiles Row",
+              "width": "fill_container",
+              "height": 100,
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "a3caAk",
+                  "name": "Tile 1",
+                  "width": "fill_container",
+                  "fill": "#F7F7F7",
+                  "cornerRadius": 8,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J52Bq5",
+                      "name": "Tile 1 Title",
+                      "fill": "#1A1A1A",
+                      "content": "Celebrated on the regional stage",
+                      "fontFamily": "Manrope",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tFvUe",
+                      "name": "Tile 1 Body",
+                      "fill": "#636362",
+                      "content": "Winners are recognised at APSIC Congress, gaining visibility across Asia Pacific's healthcare community.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tPhV4",
+                  "name": "Tile 2",
+                  "width": "fill_container",
+                  "fill": "#F7F7F7",
+                  "cornerRadius": 8,
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VWb4O",
+                      "name": "Tile 2 Title",
+                      "fill": "#1A1A1A",
+                      "content": "Prestigious recognition, not a monetary prize",
+                      "fontFamily": "Manrope",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "a7f9B8",
+                      "name": "Tile 2 Body",
+                      "fill": "#636362",
+                      "content": "The award is a mark of excellence — a prestigious accolade that signals your hospital's leadership in patient safety.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wMHaP",
+          "name": "FAQ",
+          "width": "fill_container",
+          "fill": "#F7F7F7",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "onoVy",
+              "name": "FAQ Heading",
+              "fill": "#1A1A1A",
+              "content": "Frequently Asked Questions",
+              "fontFamily": "Manrope",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Bcegm",
+              "name": "Accordion Wrapper",
+              "width": 700,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Xf19y",
+                  "name": "FAQ: Who can apply for the AEHEA?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aRA7z",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Who can apply for the AEHEA?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HKjVU",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ex5Al",
+                  "name": "FAQ: Is there a fee to enter?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "u1FI4",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Is there a fee to enter?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SuKKw",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "R6ALi",
+                  "name": "FAQ: How are hospitals evaluated?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eT0q7",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "How are hospitals evaluated?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gYJkT",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RWg8J",
+                  "name": "FAQ: What does the winner receive?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "b5wrY",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What does the winner receive?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UdDUl",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sMPpN",
+                  "name": "FAQ: When is the next award cycle?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "E0Bew",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "When is the next award cycle?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "z1XPuA",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JnAvE",
+                  "name": "FAQ: Is the process confidential?",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": "#E0E0E0",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NCQCt",
+                      "name": "Q Text",
+                      "fill": "#1A1A1A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Is the process confidential?",
+                      "fontFamily": "Manrope",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "siBfC",
+                      "name": "Q Toggle",
+                      "fill": "#007CC2",
+                      "content": "+",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bTwWN",
+          "name": "Newsletter CTA",
+          "width": "fill_container",
+          "fill": "#007CC2",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DEU4i",
+              "name": "CTA Heading",
+              "fill": "#FFFFFF",
+              "content": "Want to stay informed?",
+              "fontFamily": "Manrope",
+              "fontSize": 28,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "KkI9r",
+              "name": "CTA Sub",
+              "opacity": 0.85,
+              "fill": "#FFFFFF",
+              "content": "Get updates on the AEHEA award programme.",
+              "fontFamily": "Open Sans",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "rjDfF",
+              "name": "Subscribe Form",
+              "width": 440,
+              "height": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Pik3b",
+                  "name": "Email Input",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 6,
+                  "padding": [
+                    0,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qw2YP",
+                      "name": "Email Placeholder",
+                      "fill": "#636362",
+                      "content": "Your email address",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GvwBV",
+                  "name": "Subscribe Button",
+                  "fill": "#005A8F",
+                  "cornerRadius": 6,
+                  "padding": [
+                    14,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pZsok",
+                      "name": "Subscribe Label",
+                      "fill": "#FFFFFF",
+                      "content": "Subscribe",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D9qbhu",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1A1A1A",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            80,
+            32,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ssxNy",
+              "name": "Footer Top",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k35Ii",
+                  "name": "Footer Col 1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PCP9k",
+                      "name": "Footer Logo",
+                      "fill": "#FFFFFF",
+                      "content": "AEHEA",
+                      "fontFamily": "Manrope",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EL7SV",
+                      "name": "Footer Tagline",
+                      "fill": "#AFAFAF",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "APSIC Environmental Hygiene Excellence Award — identifying, recognising and celebrating excellence.",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "OTT83",
+                  "name": "Footer Col 2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pau9n",
+                      "name": "Footer Link Panel & Partner",
+                      "fill": "#AFAFAF",
+                      "content": "Panel & Partner",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    },
+                    {
+                      "type": "text",
+                      "id": "pSGTk",
+                      "name": "Footer Link How to Participate",
+                      "fill": "#AFAFAF",
+                      "content": "How to Participate",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    },
+                    {
+                      "type": "text",
+                      "id": "JdiQX",
+                      "name": "Footer Link Register your Interest",
+                      "fill": "#AFAFAF",
+                      "content": "Register your Interest",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VeYtf",
+                  "name": "Footer Col 3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RE9Wx",
+                      "name": "Footer Link FAQ",
+                      "fill": "#AFAFAF",
+                      "content": "FAQ",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    },
+                    {
+                      "type": "text",
+                      "id": "pMvPS",
+                      "name": "Footer Link Contact",
+                      "fill": "#AFAFAF",
+                      "content": "Contact",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    },
+                    {
+                      "type": "text",
+                      "id": "RTLI1",
+                      "name": "Footer Link Privacy Policy",
+                      "fill": "#AFAFAF",
+                      "content": "Privacy Policy",
+                      "fontFamily": "Open Sans",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "J7Fr3f",
+              "name": "Footer Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#333333"
+            },
+            {
+              "type": "frame",
+              "id": "BILnt",
+              "name": "Footer Bottom Row",
+              "width": "fill_container",
+              "height": 60,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LChpK",
+                  "name": "Copyright Text",
+                  "fill": "#636362",
+                  "content": "© 2026 APSIC Environmental Hygiene Excellence Award",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 10
+                },
+                {
+                  "type": "frame",
+                  "id": "ncf7R",
+                  "name": "Bottom Spacer",
+                  "width": "fill_container",
+                  "height": "fill_container"
+                },
+                {
+                  "type": "text",
+                  "id": "aG4vt",
+                  "name": "Legal Links",
+                  "fill": "#636362",
+                  "content": "Privacy Policy · Terms of Service · Cookies Settings",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "body-text": {
+      "type": "color",
+      "value": "#636362"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#AFAFAF"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Manrope"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Open Sans"
+    },
+    "bg": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#F7F7F7"
+    },
+    "subtle": {
+      "type": "color",
+      "value": "#EFEFEF"
+    },
+    "border": {
+      "type": "color",
+      "value": "#E0E0E0"
+    },
+    "headline": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#007CC2"
+    },
+    "accent-bg": {
+      "type": "color",
+      "value": "#E8F4FB"
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 6
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 10
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    }
+  },
+  "fileToken": "36f0a111-6236-4d40-af25-decfb4af875c"
+}

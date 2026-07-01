@@ -201,16 +201,21 @@
   .prestigious { background: linear-gradient(180deg, #fff 0%, #EDE9FF 25%, #E9E6F5 50%, #EDE9FF 75%, #fff 100%); }
   .prestigious-heading { max-width: 52%; margin-bottom: 60px; }
   .prestigious-heading .section-h { font-size: 42px; line-height: 1.15; }
-  .prestige-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; align-items: stretch; }
-  .prestige-col { display: flex; flex-direction: column; gap: 20px; }
-  .prestige-center { border-radius: 16px; overflow: hidden; height: 100%; min-height: 320px; }
-  .prestige-center img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .prestige-card { background: #fff; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 0; box-shadow: 0 2px 20px rgba(91,79,190,.06); transition: transform .25s, box-shadow .25s; }
-  .prestige-card:hover { transform: translateY(-4px); box-shadow: 0 10px 36px rgba(91,79,190,.12); }
-  .prestige-card-icon { margin-bottom: 20px; color: var(--primary); }
-  .prestige-card-icon svg { display: block; }
-  .prestige-card h4 { font-family: 'Bitter', serif; font-size: 17px; font-weight: 700; color: var(--deep); line-height: 1.3; margin-bottom: 14px; }
-  .prestige-card p { font-size: 13px; color: var(--body); line-height: 1.75; }
+  /* expanding award cards */
+  .award-cards { display: flex; gap: 12px; height: 540px; }
+  .award-card { flex: 1; border-radius: 20px; background: #fff; border: 1px solid var(--border); overflow: hidden; cursor: pointer; transition: flex .55s cubic-bezier(.4,0,.2,1); position: relative; display: flex; flex-direction: column; padding: 28px; }
+  .award-card.active { flex: 3; }
+  .award-card-num { font-family: 'Bitter', serif; font-size: 32px; font-weight: 700; color: var(--border); line-height: 1; margin-bottom: auto; }
+  .award-card-img { position: absolute; inset: 0; opacity: 0; transition: opacity .45s ease; pointer-events: none; }
+  .award-card-img img { width: 100%; height: 55%; object-fit: cover; }
+  .award-card-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, #fff 70%); }
+  .award-card.active .award-card-img { opacity: 1; }
+  .award-card-body { position: relative; z-index: 1; margin-top: auto; }
+  .award-card-icon { color: var(--primary); margin-bottom: 10px; }
+  .award-card h4 { font-family: 'Bitter', serif; font-size: 15px; font-weight: 700; color: var(--deep); line-height: 1.3; transition: font-size .3s; }
+  .award-card.active h4 { font-size: 22px; margin-bottom: 12px; }
+  .award-card-desc { font-size: 13px; color: var(--body); line-height: 1.75; max-height: 0; overflow: hidden; opacity: 0; transition: max-height .45s ease, opacity .35s ease; }
+  .award-card.active .award-card-desc { max-height: 140px; opacity: 1; }
 
   /* ── FAQ ── */
   .faq { background: #fff; text-align: center; }
@@ -249,8 +254,8 @@
   .footer-social a:hover { background: rgba(255,255,255,.1); color: #fff; }
 
   /* ── CARD HOVER BLOB ── */
-  .pillar, .prestige-card, .why-card-inner, .leader-card { position: relative; overflow: hidden; }
-  .pillar::after, .prestige-card::after, .leader-card::after {
+  .pillar, .why-card-inner, .leader-card { position: relative; overflow: hidden; }
+  .pillar::after, .leader-card::after {
     content: '';
     position: absolute;
     width: 100px; height: 100px;
@@ -263,7 +268,7 @@
     pointer-events: none;
     z-index: 0;
   }
-  .pillar:hover::after, .prestige-card:hover::after, .leader-card:hover::after {
+  .pillar:hover::after, .leader-card:hover::after {
     opacity: .10;
     transform: scale(1) rotate(15deg);
   }
@@ -498,62 +503,41 @@
     <div class="section-tag">The Award</div>
     <h2 class="section-h">Prestigious recognition, rather than a monetary prize</h2>
   </div>
-  <div class="prestige-cards">
-    <div class="prestige-col">
-      <div class="prestige-card reveal">
-        <div>
-          <div class="prestige-card-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 3L17.5 10.5H25L19 15.5L21.5 23L14 18.5L6.5 23L9 15.5L3 10.5H10.5L14 3Z" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h4>Listed in APSIC guidelines</h4>
-        </div>
-        <p>Your institution's name is listed in the APSIC guidelines and on the AEHEA website as a recognised centre of excellence — permanently on record for the Asia Pacific IPC community.</p>
-      </div>
-      <div class="prestige-card reveal">
-        <div>
-          <div class="prestige-card-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="3" width="20" height="22" rx="3" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M9 10h10M9 14h10M9 18h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h4>Certificate of achievement</h4>
-        </div>
-        <p>An official certificate of achievement prepared and endorsed by APSIC — suitable for display within your institution and recognised across the region's infection prevention network.</p>
+  <div class="award-cards reveal">
+    <div class="award-card active" onmouseenter="toggleAward(this)">
+      <div class="award-card-img"><img src="assets/award-visual.png" alt="Award"></div>
+      <span class="award-card-num">01.</span>
+      <div class="award-card-body">
+        <div class="award-card-icon"><i data-lucide="star" style="width:22px;height:22px;stroke-width:1.5"></i></div>
+        <h4>Listed in APSIC Guidelines</h4>
+        <p class="award-card-desc">Your institution's name is listed in the APSIC guidelines and on the AEHEA website as a recognised centre of excellence — permanently on record for the Asia Pacific IPC community.</p>
       </div>
     </div>
-    <div class="prestige-center reveal">
-      <img src="assets/awwards/assets.png" alt="Award recognition">
-    </div>
-    <div class="prestige-col">
-      <div class="prestige-card reveal">
-        <div>
-          <div class="prestige-card-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="14" cy="14" r="10" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M14 4C14 4 10 9 10 14C10 19 14 24 14 24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-              <path d="M14 4C14 4 18 9 18 14C18 19 14 24 14 24" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-              <path d="M4 14h20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h4>Regional visibility &amp; award plaque</h4>
-        </div>
-        <p>Acknowledgment across APSIC's social media and publications, shared with the IPC community across Asia Pacific — plus an official AEHEA Award plaque presented at the regional ceremony.</p>
+    <div class="award-card" onmouseenter="toggleAward(this)">
+      <div class="award-card-img"><img src="assets/award-visual.png" alt="Award"></div>
+      <span class="award-card-num">02.</span>
+      <div class="award-card-body">
+        <div class="award-card-icon"><i data-lucide="file-text" style="width:22px;height:22px;stroke-width:1.5"></i></div>
+        <h4>Certificate of Achievement</h4>
+        <p class="award-card-desc">An official certificate prepared and endorsed by APSIC — suitable for display within your institution and recognised across the region's infection prevention network.</p>
       </div>
-      <div class="prestige-card reveal">
-        <div>
-          <div class="prestige-card-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 4v20M4 14h20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <circle cx="14" cy="14" r="10" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M8 8l12 12M20 8L8 20" stroke="currentColor" stroke-width="0" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h4>Invitation to present</h4>
-        </div>
-        <p>Award winners receive a formal invitation to present their programme at the APSIC regional conference — sharing their innovations with infection prevention leaders across Asia Pacific.</p>
+    </div>
+    <div class="award-card" onmouseenter="toggleAward(this)">
+      <div class="award-card-img"><img src="assets/award-visual.png" alt="Award"></div>
+      <span class="award-card-num">03.</span>
+      <div class="award-card-body">
+        <div class="award-card-icon"><i data-lucide="globe" style="width:22px;height:22px;stroke-width:1.5"></i></div>
+        <h4>Regional Visibility &amp; Award Plaque</h4>
+        <p class="award-card-desc">Acknowledgment across APSIC's social media and publications, shared with the IPC community across Asia Pacific — plus an official AEHEA Award plaque at the regional ceremony.</p>
+      </div>
+    </div>
+    <div class="award-card" onmouseenter="toggleAward(this)">
+      <div class="award-card-img"><img src="assets/award-visual.png" alt="Award"></div>
+      <span class="award-card-num">04.</span>
+      <div class="award-card-body">
+        <div class="award-card-icon"><i data-lucide="presentation" style="width:22px;height:22px;stroke-width:1.5"></i></div>
+        <h4>Invitation to Present</h4>
+        <p class="award-card-desc">Award winners receive a formal invitation to present their programme at the APSIC regional conference — sharing innovations with infection prevention leaders across Asia Pacific.</p>
       </div>
     </div>
   </div>
@@ -654,6 +638,10 @@
     if (!isOpen) item.classList.add('open');
   }
   lucide.createIcons();
+  function toggleAward(el) {
+    document.querySelectorAll('.award-card').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+  }
   function setVer(v, btn) {
     document.body.classList.toggle('v2', v === 2);
     document.querySelectorAll('.ver-btn').forEach(b => b.classList.remove('active'));

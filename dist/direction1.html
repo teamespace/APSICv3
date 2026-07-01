@@ -81,6 +81,88 @@
       padding: 0 120px;
     }
 
+    /* Font switching */
+    [data-font="dmsans"] {
+      --font-body: 'DM Sans', Arial, sans-serif;
+      --font-head: 'DM Sans', Arial, sans-serif;
+      --font: 'DM Sans', Arial, sans-serif;
+    }
+    [data-font="default"] {
+      --font-body: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --font-head: 'DM Sans', 'Open Sans', Arial, sans-serif;
+      --font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    /* Font toggle */
+    .nav__font-toggle {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      background: #f0f0f0;
+      border-radius: 999px;
+      padding: 3px;
+      margin-right: 4px;
+    }
+    .nav__font-btn {
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: #888888;
+      font-family: var(--font-body);
+      transition: all 0.2s;
+      letter-spacing: 0;
+    }
+    .nav__font-btn.is-active {
+      background: #ffffff;
+      color: var(--text-primary);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    }
+
+    /* Marquee */
+    .marquee-strip {
+      overflow: hidden;
+      padding: 18px 0;
+      background: var(--page-card);
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+      user-select: none;
+    }
+    .marquee-track {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee-scroll 28s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-content {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      padding-right: 0;
+    }
+    .marquee-item {
+      font-size: clamp(22px, 3vw, 40px);
+      font-weight: 400;
+      font-family: var(--font-head);
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      padding: 0 40px;
+    }
+    .marquee-sep {
+      color: #cccccc;
+      font-size: clamp(18px, 2.5vw, 32px);
+      font-weight: 300;
+      flex-shrink: 0;
+    }
+    @keyframes marquee-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
     /* Navigation */
     .nav {
       position: sticky;
@@ -437,81 +519,65 @@
       font-family: var(--font-body);
     }
 
-    /* About top layout */
-    .about__top {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-      margin-bottom: 56px;
-      padding-top: 16px;
-    }
-
-    .about__top-left {
-      display: flex;
-      flex-direction: column;
+    /* About header */
+    .about__header {
+      padding: var(--section-py) 0 40px;
+      border-bottom: none;
+      margin-bottom: 72px;
+      text-align: center;
     }
 
     .about__header-title {
-      font-size: clamp(28px, 3.2vw, 48px);
+      font-size: clamp(32px, 4.2vw, 60px);
       font-weight: 400;
-      line-height: 1.2;
+      line-height: 1.15;
       letter-spacing: -0.02em;
       color: var(--text-primary);
       font-family: var(--font-head);
-      margin: 0;
+      margin: 0 auto 36px;
+      max-width: 860px;
     }
 
     .about__accent { color: var(--accent-teal); }
 
-    .about__top-right {
+    .about__inline-img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 110px;
+      height: 56px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 4px;
+      position: relative;
+      top: -3px;
+    }
+
+    .about__inline-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about__header-body {
       display: flex;
       flex-direction: column;
-      gap: 28px;
-      padding-top: 48px;
+      gap: 16px;
+      margin-bottom: 40px;
     }
 
-    .about__badge {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: #f5f5f5;
-      border-radius: 16px;
-      padding: 14px 18px;
-      width: fit-content;
-    }
-
-    .about__badge-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      flex-shrink: 0;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    }
-
-    .about__badge-icon img {
-      width: 28px;
-      height: 28px;
-      object-fit: contain;
-    }
-
-    .about__badge-label {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-primary);
-      font-family: var(--font-body);
-      line-height: 1.4;
-      max-width: 200px;
+    .about__header-body p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin: 0 auto;
+      max-width: 620px;
     }
 
     .about__header-actions {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
     }
@@ -611,9 +677,9 @@
     }
 
     .about__pillar-icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1757,6 +1823,10 @@
             <a href="#faq" class="nav__link">FAQ</a>
             <a href="#contact" class="nav__link">Contact</a>
           </div>
+          <div class="nav__font-toggle">
+            <button class="nav__font-btn is-active" data-font="default">Default</button>
+            <button class="nav__font-btn" data-font="dmsans">DM Sans</button>
+          </div>
           <a href="#cta" class="nav__cta btn-magnetic"><span>Apply Now</span></a>
           <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
             <span></span>
@@ -1791,27 +1861,54 @@
         </div>
       </header>
 
+      <!-- Marquee strip -->
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-content">
+            <span class="marquee-item">Excellence in Environmental Hygiene</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Patient Safety</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Asia Pacific</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">APSIC Award</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Elevating Care Standards</span>
+            <span class="marquee-sep">⊕</span>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee-content" aria-hidden="true">
+            <span class="marquee-item">Excellence in Environmental Hygiene</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Patient Safety</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Asia Pacific</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">APSIC Award</span>
+            <span class="marquee-sep">⊕</span>
+            <span class="marquee-item">Elevating Care Standards</span>
+            <span class="marquee-sep">⊕</span>
+          </div>
+        </div>
+      </div>
+
       <section class="about" id="about">
         <div class="container">
 
-          <div class="about__top">
-            <!-- Left: eyebrow + headline -->
-            <div class="about__top-left">
-              <p class="about__eyebrow">About the Award</p>
-              <h2 class="about__header-title">The <span class="about__accent">APSIC Environmental Hygiene Excellence Award</span> is an invaluable recognition for healthcare facilities across Asia Pacific.</h2>
+          <div class="about__header">
+            <p class="about__eyebrow">About the Award</p>
+            <h2 class="about__header-title">The <span class="about__accent">APSIC Environmental
+              <span class="about__inline-img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=200&q=80" alt=""></span>
+              Hygiene Excellence Award</span> is an invaluable
+              <span class="about__inline-img"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=200&q=80" alt=""></span>
+              recognition for healthcare facilities across Asia Pacific.</h2>
+            <div class="about__header-body">
+              <p>The APSIC Environmental Hygiene Excellence Award (AEHEA) has been established as a regional platform to identify, recognise, honour, celebrate, and share best practices in environmental hygiene that demonstrate excellence in championing and sustaining the highest standard of hygiene and safety.</p>
+              <p>We would encourage nominees that have meaningfully contributed to this region.</p>
             </div>
-            <!-- Right: badge + actions -->
-            <div class="about__top-right">
-              <div class="about__badge">
-                <div class="about__badge-icon">
-                  <img src="assets/logo/EHEA-logo.svg" alt="AEHEA">
-                </div>
-                <span class="about__badge-label">APSIC Environmental Hygiene Excellence Award</span>
-              </div>
-              <div class="about__header-actions">
-                <a href="#cta" class="btn btn--primary btn-magnetic"><span>Apply Now</span></a>
-                <a href="#contact" class="btn btn--outline btn-magnetic"><span>Contact</span></a>
-              </div>
+            <div class="about__header-actions">
+              <a href="#cta" class="btn btn--primary btn-magnetic"><span>Register Our Award</span></a>
+              <a href="#contact" class="btn btn--outline btn-magnetic"><span>Contact</span></a>
             </div>
           </div>
           <div class="about__pillars">
@@ -2269,6 +2366,19 @@
           });
         });
       }
+    })();
+
+    // Font toggle
+    (function () {
+      var btns = document.querySelectorAll('.nav__font-btn');
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var font = btn.getAttribute('data-font');
+          document.documentElement.setAttribute('data-font', font);
+          btns.forEach(function (b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+        });
+      });
     })();
   </script>
 </body>

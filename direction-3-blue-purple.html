@@ -122,16 +122,14 @@
   .about-eyebrow-icon { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--muted); flex-shrink: 0; }
   .about-eyebrow-label { font-size: 13px; color: var(--muted); line-height: 1.4; }
   /* pillar cards */
-  .pillars-row { display: grid; grid-template-columns: repeat(3, 1fr); }
-  .pillar { padding: 32px 28px; border: 1px solid var(--border); border-right: none; display: flex; flex-direction: column; gap: 14px; transition: background .2s; }
-  .pillars-row .pillar:first-child { border-radius: 16px 0 0 16px; }
-  .pillars-row .pillar:last-child { border-right: 1px solid var(--border); border-radius: 0 16px 16px 0; }
-  .pillar:hover { background: var(--surface); }
-  .pillar-icon-wrap { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .pillar-icon-wrap.blue  { background: #EFF6FF; color: #3B82F6; }
-  .pillar-icon-wrap.green { background: #F0FDF4; color: #22C55E; }
-  .pillar-icon-wrap.orange{ background: #FFF7ED; color: #F97316; }
-  .pillar h3 { font-family: 'Bitter', serif; font-size: 16px; font-weight: 700; color: var(--text); line-height: 1.3; }
+  .pillars-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .pillar { display: flex; flex-direction: column; gap: 20px; }
+  .pillar-img-wrap { position: relative; width: 130px; height: 130px; }
+  .pillar-img { width: 130px; height: 130px; border-radius: 50%; background: var(--surface); overflow: hidden; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 11px; font-weight: 600; }
+  .pillar-img img { width: 100%; height: 100%; object-fit: cover; }
+  .pillar-arrow { position: absolute; top: 4px; right: 4px; width: 32px; height: 32px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; color: #fff; box-shadow: 0 2px 8px rgba(91,79,190,.3); }
+  .pillar-arrow svg { width: 14px; height: 14px; stroke-width: 2.2; }
+  .pillar h3 { font-family: 'Bitter', serif; font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.25; margin-bottom: 8px; }
   .pillar p { font-size: 13px; color: var(--muted); line-height: 1.7; }
   /* shared btn structure */
   .btn-primary, .btn-ghost { display: inline-flex; align-items: center; gap: 12px; padding: 5px 5px 5px 20px; border-radius: 100px; font-size: 13px; font-weight: 600; letter-spacing: .3px; transition: transform .2s, box-shadow .2s; white-space: nowrap; }
@@ -280,7 +278,7 @@
   .ver-btn { font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 100px; border: none; background: transparent; color: var(--muted); cursor: pointer; transition: all .2s; letter-spacing: .5px; }
   .ver-btn.active { background: #fff; color: var(--deep); box-shadow: 0 1px 4px rgba(0,0,0,.1); }
 
-  /* V2: DM Sans for all serif/headline elements */
+  /* V2: DM Sans Regular for all serif/headline elements */
   body.v2 h1, body.v2 h2, body.v2 h3, body.v2 h4,
   body.v2 .hero-line,
   body.v2 .section-h,
@@ -291,6 +289,7 @@
   body.v2 .leader-info .name,
   body.v2 .pillar-text h3 {
     font-family: 'DM Sans', sans-serif !important;
+    font-weight: 400 !important;
   }
 </style>
 </head>
@@ -352,34 +351,34 @@
   </div>
   <div class="pillars-row">
     <div class="pillar reveal">
-      <div class="pillar-icon-wrap blue">
-        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 3L4 7v8c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V7L14 3z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-          <path d="M10 14l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      <div class="pillar-img-wrap">
+        <div class="pillar-img"><img src="assets/pillar-ipc.png" onerror="this.parentElement.innerHTML='+ image'"></div>
+        <div class="pillar-arrow"><i data-lucide="arrow-up-right"></i></div>
       </div>
-      <h3>Commitment to IPC</h3>
-      <p>Facilities that demonstrate a sustained, organisation-wide commitment to infection prevention and control as a core pillar of patient care.</p>
+      <div>
+        <h3>Commitment<br>to IPC</h3>
+        <p>Facilities that demonstrate a sustained, organisation-wide commitment to infection prevention and control as a core pillar of patient care.</p>
+      </div>
     </div>
     <div class="pillar reveal">
-      <div class="pillar-icon-wrap green">
-        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="14" cy="11" r="6" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M11 17v2a3 3 0 006 0v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M14 8v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
+      <div class="pillar-img-wrap">
+        <div class="pillar-img"><img src="assets/pillar-innovation.png" onerror="this.parentElement.innerHTML='+ image'"></div>
+        <div class="pillar-arrow"><i data-lucide="arrow-up-right"></i></div>
       </div>
-      <h3>Innovative Practices</h3>
-      <p>Programmes that introduce evidence-based innovation to improve environmental hygiene standards, protocols, and outcomes across the facility.</p>
+      <div>
+        <h3>Innovative<br>Practices</h3>
+        <p>Programmes that introduce evidence-based innovation to improve environmental hygiene standards, protocols, and outcomes across the facility.</p>
+      </div>
     </div>
     <div class="pillar reveal">
-      <div class="pillar-icon-wrap orange">
-        <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polyline points="4,20 10,12 14,16 18,10 24,14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
+      <div class="pillar-img-wrap">
+        <div class="pillar-img"><img src="assets/pillar-quality.png" onerror="this.parentElement.innerHTML='+ image'"></div>
+        <div class="pillar-arrow"><i data-lucide="arrow-up-right"></i></div>
       </div>
-      <h3>Quality of Care</h3>
-      <p>Organisations where high environmental hygiene standards directly translate to measurable improvements in patient safety and clinical outcomes.</p>
+      <div>
+        <h3>Quality<br>of Care</h3>
+        <p>Organisations where high environmental hygiene standards directly translate to measurable improvements in patient safety and clinical outcomes.</p>
+      </div>
     </div>
   </div>
 </section>
